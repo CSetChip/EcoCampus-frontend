@@ -1,0 +1,42 @@
+.img-capa {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+  
+.img-container {
+    display: flex; 
+    align-items: flex-start; 
+    margin-right: 20px;
+}
+  
+.title {
+    text-align: left;
+    margin-top: 240px;
+    margin-left: 300px;
+}
+
+.sub-title {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: -140px;
+}
+
+.float-animation{
+    transition: transform 0.5s ease-in-out; 
+    animation: efectfloatAnimation 3s infinite alternate; 
+}
+
+@keyframes efectfloatAnimation {
+    0% {
+        transform: translateY(5px); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
